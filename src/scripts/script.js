@@ -7,10 +7,14 @@ const closeForm = document.querySelector('#close')
 const exerciseInput = document.querySelector('#ex-input')
 const choiceSerie = document.querySelector('#serie-options')
 const serie = document.querySelector('#series')
-const newSerieInput = document.querySelector('serie-input')
+const newSerieInput = document.querySelector('#serie-input')
 const day = document.querySelector('#day-select')
 // funções
 
+const CreateSerie = (serie) =>{
+    if(!serie) return
+    console.log(serie)
+}
 // eventos
 newExerciseBtn.addEventListener('click', () =>{
     newExerciseBtn.textContent = 'Inserir treino!'
@@ -20,13 +24,13 @@ newExerciseBtn.addEventListener('click', () =>{
         newExerciseBtn.addEventListener('click', () =>{
             const exercise = exerciseInput.value
             const SerieType = choiceSerie.value
-            const dayTraining = day.value
-            const valueInSerieOptions = choiceSerie.value
-            const valueInOptions = serie.value
+            const newSerieValue = newSerieInput.value
             
             if (!exercise) return
 
-            serie.classList.remove('hide')
+            if(SerieType === 'new-serie'){
+                CreateSerie(newSerieValue)
+            }
         })
     }
 })
