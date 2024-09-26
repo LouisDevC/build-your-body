@@ -3,85 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://cdn.pixabay.com/photo/2016/03/31/19/34/black-1295124_960_720.png" type="image/x-icon">
+    <title>Diário - online</title>
     <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <title>Build Your Body</title>
-    <script src="src/scripts/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="https://cdn.pixabay.com/photo/2018/02/25/08/54/crossfit-3179985_1280.png" alt="logo Build Your Body - homem segurando supino">
-        </div>
-        <div class="search-container">
-            <input type="search" id="search-input" class="all-inputs" placeholder="Procurar exercícios!">
-        </div>
-        <div class="filter-container">
-            <select id="day-filter">
-                <option value="Segunda-feira">Segunda-feira</option>
-                <option value="Terça-feira">Terça-feira</option>
-                <option value="Quarta-feira">Quarta-feira</option>
-                <option value="Quinta-feira">Quinta-feira</option>
-                <option value="Sexta-feira">Sexta-feira</option>
-                <option value="Sábado">Sábado</option>
-                <option value="Domingo">Domingo</option>
-            </select>
-        </div>
+        <h1>Diário online</h1>
+        <i class="fa-solid fa-book"></i>
     </header>
     <main>
-        <div class="new-exercise">
-            <button id="new-btn" class="all-btns">Novo exercício</button>
-            <div class="informations hide">
-                <label for="exercise">Exercício:</label>
-                <input type="text" name="exercise" id="ex-input">
-                <select id="serie-options">
-                    <option value="existente">série existente</option>
-                    <option value="new-serie">Nova serie</option>
-                </select>
-                <select id="series" class="hide">
-                    
-                </select>
-                <label for="new-serie">série:</label>
-                <input type="text" name="new-serie" id="serie-input">
-
-                <select id="day-select">
-                    <option value="Segunda-feira">Segunda-feira</option>
-                    <option value="Terça-feira">Terça-feira</option>
-                    <option value="Quarta-feira">Quarta-feira</option>
-                    <option value="Quinta-feira">Quinta-feira</option>
-                    <option value="Sexta-feira">Sexta-feira</option>
-                    <option value="Sábado">Sábado</option>
-                    <option value="Domingo">Domingo</option>
-                </select>
-                <i class="bi bi-file-excel" id="close"></i>
-            </div>
-        </div>
-
-        <section class="exercise-container">
-            <div class="exercise">
-                <p>Exercício 1: <br>
-                    <span id="complete">incompleto</span></p>
-                <p>dia da semana: <span class="day">Segunda-feira</span></p>
-                <div class="btns-container">
-                        <i class="bi bi-pencil-square"></i>
-                        <i class="bi bi-calendar-x-fill"></i>
-                        <i class="bi bi-card-checklist"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="exercise">
-                <p>Exercício 1: <br>
-                    <span id="complete">incompleto</span></p>
-                <p>dia da semana: <span class="day">Segunda-feira</span></p>
-                <div class="btns-container">
-                        <i class="bi bi-pencil-square"></i>
-                        <i class="bi bi-calendar-x-fill"></i>
-                        <i class="bi bi-card-checklist"></i>
-                    </button>
-                </div>
-            </div>
-        </section>
+        <button id="nova-nota">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="container"></div>
     </main>
+    <footer>
+        <span>&copy; <a href="">devLouisC</a></span>
+    </footer>
 </body>
 </html>
